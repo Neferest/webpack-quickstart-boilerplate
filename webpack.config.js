@@ -40,11 +40,6 @@ module.exports = env => {
                     },
                     exclude: /node_modules/,
                 },
-                // CSS & SASS files
-                {
-                    test: /\.(css|scss)$/,
-                    use: ['style-loader', 'css-loader', 'sass-loader']
-                },
                 // Images files
                 {
                     test: /\.(jpe?g|png|gif)$/,

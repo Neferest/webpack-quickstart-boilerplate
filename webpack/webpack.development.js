@@ -1,3 +1,13 @@
 module.exports = env => {
-    return {}
+    return {
+        module: {
+            rules: [
+                // CSS & SASS files
+                {
+                    test: /\.(css|scss)$/,
+                    use: ['style-loader', 'css-loader', 'sass-loader']
+                },
+            ]
+        }
+    }
 }
